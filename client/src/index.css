@@ -42,7 +42,7 @@ body {
 
 .logo {
   position: absolute;
-  z-index: 90;
+  z-index: 10;
   right: -2vw;
   height: 100vmin;
   bottom: 0;
@@ -70,6 +70,7 @@ body {
 .NavBar{
   display: flex;
   position: fixed;
+  z-index: 99;
   margin: 3% 0 0 3%;
   color: #494971;
   font-size: 1.5rem;
