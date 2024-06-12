@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,12 +29,53 @@ a:hover {
 }
 
 body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 100vw;
+  min-height: 100vh; */
+  background-color: #ffd281;
 }
+
+.logo {
+  position: absolute;
+  z-index: 90;
+  right: -2vw;
+  height: 100vmin;
+  bottom: 0;
+  
+}
+
+.App {
+  overflow: hidden;
+  position: relative;
+  margin: 5vh 5vw;
+  height: 90vh;
+  width: 90vw;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 73px;
+}
+
+.App-box {
+  position: absolute;
+  bottom: 0;
+  right: -9vmin;
+  height: 53vmin;
+}
+
+.NavBar{
+  display: flex;
+  position: fixed;
+  margin: 3% 0 0 3%;
+  color: #494971;
+  font-size: 1.5rem;
+  gap: 6%;
+}
+
 
 h1 {
   font-size: 3.2em;
