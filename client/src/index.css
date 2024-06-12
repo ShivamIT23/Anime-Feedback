@@ -83,6 +83,19 @@ body {
   gap: 6%;
 }
 
+.Main-Heading {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  color: #494971;
+  z-index: 999;
+  transform: translateX(-50%);
+  transform: translateY(-30%);
+  font-size: 14vmin;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

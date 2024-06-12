@@ -3,12 +3,14 @@ import AnimeBackground from '/AnimeBackground1.png'
 import backbox from '/back-box.png';
 import './App.css'
 import { NavBar } from './NavBar/NavBar'
+import { Heading } from './Heading';
 
 function App() {
 
   return (
       <div className='App'>
         <NavBar />
+        <Heading />
           <img src={AnimeBackground} className="logo" alt="Background-girl" />
           <img src={backbox} className='App-box' alt="Box-back" />
       </div>
