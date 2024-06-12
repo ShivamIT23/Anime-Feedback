@@ -46,7 +46,6 @@ body {
   right: -2vw;
   height: 100vmin;
   bottom: 0;
-  
 }
 
 .App {
@@ -67,16 +66,22 @@ body {
   height: 53vmin;
 }
 
-.NavBar{
+.NavBar {
   display: flex;
   position: fixed;
   z-index: 99;
   margin: 3% 0 0 3%;
   color: #494971;
-  font-size: 1.5rem;
-  gap: 6%;
 }
 
+.NavBar-Items {
+  display: flex;
+  position: relative;
+  color: #494971;
+  font-size: 4vmin;
+  font-weight: 700;
+  gap: 6%;
+}
 
 h1 {
   font-size: 3.2em;

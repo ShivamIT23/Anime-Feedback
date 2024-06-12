@@ -19,14 +19,14 @@ export const Logo = () => {
     
 
     const style1 = {
-        width: "7%", 
-        marginRight : "3%",
+        width: "10%", 
+        marginRight : "9%",
         borderRadius : "24%",
     }
 
     const style2 = {
-        width: "9%", 
-        marginRight : "1%",
+        width: "12%", 
+        marginRight : "7%",
     }
 
   return (

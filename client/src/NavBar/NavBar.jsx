@@ -1,13 +1,19 @@
-import { AboutUs } from "./AboutUs"
-import { Home } from "./Home"
-import { Logo } from "./Logo"
+import { AboutUs } from "./AboutUs";
+import { Home } from "./Home";
+import { Login } from "./Login";
+import { Logo } from "./Logo";
+import { Signup } from "./Signup";
 
 export const NavBar = () => {
   return (
     <div className="NavBar">
       <Logo />
-        <Home />
-        <AboutUs />
-        </div>
-  )
-}
+    <div className="NavBar-Items">
+      <Home />
+      <AboutUs />
+      <Login />
+      <Signup />
+      </div>
+    </div>
+  );
+};
