@@ -2,9 +2,11 @@ const express = require("express");
 const signupRoute = require("./Routes/signup.js");
 const signinRoute = require("./Routes/signin.js");
 const loginRoute = require("./Routes/login.js")
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
