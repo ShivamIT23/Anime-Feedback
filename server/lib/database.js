@@ -2,10 +2,18 @@ const mongoose = require("mongoose");
 const bcrypt = require('bcrypt');
 
 
-
-mongoose.connect(
-  "mongodb+srv://loginpurposeonly23mongodb:p7KaM9CvKtBID3k3@cluster0.sl7alfc.mongodb.net/Users_Anime_Feedback"
-);
+async function connectToDatabase(){
+  try{
+    mongoose.connect(process.env.MONGODB_URP,{
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to MongoDB");
+  }catch(err){
+    console.log("Error connecting to MongoDB: "+err);
+  }
+}
+connectToDatabase();
 
 const User = mongoose.model("Users", {
   name: String,
