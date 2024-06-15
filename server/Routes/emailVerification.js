@@ -1,8 +1,7 @@
 
 function emailVerification(req,res ,next)  {
     const otp = req.query.otp;
-    if(otp = req.secretData){
-    res.json({Msg : "Email Verification Successfull"}) 
+    if(otp == req.secretData){ 
     next();
     }else{
       res.json({Msg : "Email Verification Failed"});
