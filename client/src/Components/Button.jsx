@@ -1,10 +1,7 @@
 
 
-export const Button = ({children}) => {
+export const Button = () => {
   return (
-    <div className="Common-button">
-      <button>{children}</button>
-    </div>
-    
+    <div>Button</div>
   )
 }
